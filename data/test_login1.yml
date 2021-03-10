@@ -1,0 +1,11 @@
+- test:
+    name: 标准电码转字符
+    request:
+      url: http://v.juhe.cn/cccn/to_chinese.php
+      method: GET
+      params:
+        telecodes: $telecode
+        key: f97a28e64d8d8c5ee1ffa53d94f5783c
+    validate:
+      - eq: [$.reason,success]
+      - eq: [$.error_code,0]

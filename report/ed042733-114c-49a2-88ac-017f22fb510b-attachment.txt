@@ -1,0 +1,7 @@
+{'url': 'http://v.juhe.cn/cccn/to_chinese.php', 'method': 'GET', 'params': {'telecodes': '0132', 'key': 'f97a28e64d8d8c5ee1ffa53d94f5783c'}}
+
+ {"reason":"success","result":[{"telecode":"0132","word":"你"}],"error_code":0}
+实际结果：['success']
+预期结果：success
+实际结果：[0]
+预期结果：0
